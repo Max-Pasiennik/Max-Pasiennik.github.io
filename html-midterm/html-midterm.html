@@ -1,16 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    
-    <html language="en">
-    
     <title>Error-Filled Page</title>
-    
+</head>
 <body>
-    <h1>Welcome to My Error-Filled Page
+    <h1>Welcome to My Error-Filled Page</h1>
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
     
-    This is a paragraph with mismatched tags and missing closing tags.</p>
-    
-    <ol>
+    <ul>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -22,13 +19,12 @@
         <li>Item 9</li>
         <li>Item 10</li>
     </ul>
-
-    <p>This is another paragraph without proper indentation.
+    <p>This is another paragraph without proper indentation.</p>
     
-    <img src="image.jpg">
-
-    <a href="https://www.example.com" target="_blank">Click me!</img>
-
+    <img src="image.jpg" alt="programming god meme">
+    
+    <a href="https://www.example.com" target="_blank">Click me!</a>
+    
     <table>
         <tr>
             <th>Name</th>
@@ -36,30 +32,54 @@
         </tr>
         <tr>
             <td>John</td>
-            <td>25<td>
+            <td>25</td>
         </tr>
         <tr>
             <td>Jane</td>
             <td>30</td>
         </tr>
+    </table>
     
-    <img source="error.jpeg" alt="Error Image">
-
-    <center>This is centered text.</center>
-
-    <p bgcolor="lightgray">Text</p>
-
+    <img src="error.jpeg" alt="Error Image">
+    
+    <p style="text-align: center;">This is centered text.</p>
+    
+    <p style="background-color: lightgray;">Text</p>
+    
     <input type="button" value="Click me">
-
-    <!-- This is an unclosed comment
-
-    <a href="#">Link without closing tag
-
-    <p><em>Underlined text</p></em>
-
+    
+    <!-- This is an unclosed comment -->
+    
+    <a href="#"></a>
+    
+    <p><u>Underlined text</u></p>
+    
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
     </dl>
 </body>
 </html>
+
+<!--
+    1.) line 1 changed <html> to <!DOCTYPE html>.
+    2.) line 4 changed language to lang.
+    3.) line 4 moved the html start tag to line 2, outside of the header.
+    4.) line 8 add a clesing header 1 tag to the end of the header.
+    5.) line 10 added a p tag to the start of the paragraph.
+    6.) line 12 changed the ordered list to an unordered list to match the closing tag on line 23, figured since the list already had numbers it would be redundant to use an ordered list.
+    7.) line 25 added a closing tag to the paragraph.
+    8.) line 27 added an alt description to the image.
+    9.) line 29 corrected the closing tag froman image to a anchor.
+    10.) line 38 added a slash to close the table data. 
+    11.) line 44 added a closed table tag to close the table.
+    12.) line 45 changed source to src.
+    13.) line 47 removed obsolete center element and replaced with style.
+    14.) line 49 removed bgcolor tag and replaced with style.
+    15.) line 53 added a close comment tag.
+    16.) line 55 added a closing anchor tag to the link.
+    17.) line 57 switched the paragraph closing tag and the emphasis closing tag. 
+    18.) line 57 changed the emphasis tags to underline tags to match the text description. 
+    19.) line 60 changed list item tags to define term tags.
+    20.) line 61 changed list item tags to description detail tags.
+-->
