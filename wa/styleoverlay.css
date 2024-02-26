@@ -1,0 +1,87 @@
+
+.overlay1 .CBSLogo {
+    position: relative; 
+    display: inline-block;
+    margin-right: 10px; 
+  }
+  
+  .overlay1 .niners {
+    display: inline-block;
+    background-color: rgb(244, 56, 19);
+    margin-right: 10px; 
+  }
+  
+  .overlay1 .zero {
+    display: inline-block;
+    background-color: red;
+    margin-right: 10px; 
+  }
+  
+  .overlay1 .chiefs {
+    display: inline-block;
+    background-color: gray;
+    margin-right: 10px; 
+  }
+  
+  .overlay1 .zerozero {
+    display: inline-block;
+    background-color: gray;
+    margin-right: 10px; 
+  }
+  
+  .overlay1 .Time {
+    display: inline-block;
+    background-color: gray;
+    margin-right: 10px;
+  }
+  
+  .overlay1 .Down {
+    display: inline-block;
+    background-color: gray;
+    margin-right: 10px; 
+  }
+  
+  
+  
+  img {
+    max-width: 100%; 
+    display: block; 
+    margin: auto; 
+  }
+  
+  h2 {
+    font-size: 12px;
+  }
+  
+  
+  body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .overlay1 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+  }
+  
+  .overlay2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+  }
+  
+  
+  .overlay1 .CBSLogo,
+  .overlay1 .zero,
+  .overlay1 .Time {
+    background-color: orange;
+  }
