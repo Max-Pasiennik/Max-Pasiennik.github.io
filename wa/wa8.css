@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    background-color: rgb(226, 43, 43);
+    color: white;
+}
+
+nav a {
+    width: 10vw;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(1);
+}
+
+img {
+    width: 30vw;
+    height: 50vh;
+}
+
+#red-ball {
+    background-color: rgb(10, 0, 8);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 6vw;
+    top: 60vh;
+    animation: bounce 3s ease-out infinite;
+}
+
+@keyframes bounce {
+    0%   { transform: translate3d(0, 0, 0); }
+    25%  { transform: translate3d(50px, -200px, 0); }
+    50%  { transform: translate3d(200px, -150px, 0); }
+    75%  { transform: translate3d(250px, -100px, 0); }
+    100% { transform: translate3d(300px, -50px, 0); }
+}
