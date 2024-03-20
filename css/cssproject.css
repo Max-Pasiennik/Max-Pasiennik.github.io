@@ -7,8 +7,8 @@ body {
 
 header, footer {
     background-color: rgb(192, 173, 104);
-    color: #fff;
     padding: 20px;
+    color: #fff;
     text-align: center;
 }
 
@@ -23,16 +23,17 @@ main {
 }
 
 .concert {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    box-shadow: 0 0 10px rgba(14, 13, 13, 0.1);
     padding: 20px;
     width: 40%;
+    margin: 20px;
+   
 }
 
 .concert h2 {
-    color: #333;
+    color: #171616;
 }
 
 .concert .date {
@@ -40,12 +41,12 @@ main {
 }
 
 .concert .description {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .concert .artists,
 .concert .repertoire {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .concert .artists h3,
