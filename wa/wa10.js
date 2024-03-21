@@ -37,6 +37,7 @@ newStory = newStory.replace(":insertX:", xItem);
     let weight = Math.round(300/14);
     weight = weight + "stone";
     let temperature =  Math.round(94-32)*(5/9);
+    
     temperature = temperature + "centigrade";
     newStory = newStory.replace("300 pounds", weight);
     newStory = newStory.replace("94 fahrenheit", temperature);
