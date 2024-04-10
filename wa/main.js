@@ -9,7 +9,7 @@ const overlay = document.querySelector('.overlay');
 /* Declaring the array of image filenames */
 const pics = ["./images/pic1.jpg", "./images/pic2.jpg", "./images/pic3.jpg", "./images/pic4.jpg", "./images/pic5.jpg"];
 /* Declaring the alternative text for each image file */
-const alt = ["sitting willy", "laying luni", "christmas willy", "silly willy", "luni & willy"];
+const alt = ["hockey 1", "hockey 2", "hockey 3", "hockey 4", "hockey 5"];
 /* Looping through images */
 for (let i = 0; i < 5; i++) {
     const newImage = document.createElement('img');
