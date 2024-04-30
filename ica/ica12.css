@@ -64,7 +64,7 @@ header {
 }
 
 .twitter {
-  background-color: #1da1f2;
+  background-color: #45cc23;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 .new-quote {
-  background-color: #4A2B0F;
+  background-color: #e97f22;
   margin-bottom: 15px;
 }
 
@@ -83,7 +83,7 @@ header {
 
 .new-quote:disabled {
   background-color: #cccccc;
-  color: #666666;
+  color: #ffffff;
   cursor: not-allowed;
 }
 
