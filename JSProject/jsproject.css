@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +16,8 @@ body {
 .container {
   background-color: white;
   color: black;
-  width: 400px;
-  min-height: 300px;
+  width: 800px;
+  min-height: 500px;
   border-radius: 10px;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
     inset -5px -5px 10px rgba(0, 0, 0, 0.3);
@@ -29,13 +28,14 @@ body {
 }
 
 h1 {
+  font-size: 60px;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: rgb(16, 27, 123);
 }
 
 .count {
-  font-size: 70px;
+  font-size: 90px;
 }
 
 .counters {
@@ -47,7 +47,8 @@ h1 {
 
 .btn {
   color: white;
-  padding: 10px 20px;
+  font-size: 30px; /* Adjusted font size */
+  padding: 20px 40px; /* Increased padding */
   outline: none;
   border: 1px solid black;
   background-color: rgb(16, 27, 123);
@@ -65,7 +66,8 @@ h1 {
 .reset {
   color: white;
   background-color: black;
-  padding: 3px 10px;
+  font-size: 18px; /* Adjusted font size */
+  padding: 10px 20px; /* Increased padding */
   outline: none;
   border: none;
   cursor: pointer;
