@@ -3,6 +3,7 @@ const nextEl = document.querySelector(".inc");
 const resetEl = document.querySelector(".reset");
 const countEl = document.querySelector(".count");
 
+
 let counts = 50; // Start the counter at 50 initially
 
 prevEl.addEventListener("click", decrease);
@@ -34,8 +35,26 @@ const trivia = [
    { question: "What country has the largest population?", answer: "China" },
    { question: "Which superhero is known as the “Man of Steel”?", answer: "Superman" },
    { question: "Bruce Wayne is the name of which superhero?", answer: "Batman" },
-   { question: "What food do pandas eat?", answer: "Bamboo" },
+   { question: "What does Na stand for on the periodic table?", answer: "Sodium" },
+   { question: "Which U.S. state is known for peaches?", answer: "Georgia" },
+   { question: "Steve Harvey is a game show host. What’s that show called?", answer: "Family Feud" },
+   { question: "Which U.S. state is known as “America’s Dairyland”?", answer: "Wisconsin" },
+   { question: "In the movie Good Will Hunting, what college does Skylar attend?", answer: "Harvard" },
+   { question: "What food does Popeye like to eat?", answer: "Spinach" },
+   { question: "Quebec is a province in Canada. What language do they speak there?", answer: "French" },
+   { question: "Michael Phelps is an Olympic athlete known for this sport?", answer: "Swimming" },
+   { question: "What was the basketball team that Kobe Bryant played on?", answer: "Lakers" },
+   { question: "In which U.S. state is Area 51 located?", answer: "Nevada" },
+   { question: "What is the name of the largest ocean in the world?", answer: "Pacific" },
+   { question: "What animal is Bambi?", answer: "Deer" },
+   { question: "Arnold Schwarzenegger was once the governor of which U.S. State?", answer: "California" },
+   { question: "What is the smallest unit of matter?", answer: "Atom" },
+   { question: "Who was the lead vocalist of the band Queen?", answer: "Freddie Mercury" },
+   { question: "Who was the sixteenth President of the United States?", answer: "Abraham Lincoln" },
+   { question: "Which ancient city was destroyed by the eruption of Mount Vesuvius in 79 AD?", answer: "Pompeii" },
+   { question: "What is the largest organ in the human body?", answer: "Skin" },
 
+   
 ];
 
 function increase() {
@@ -53,6 +72,7 @@ function reset() {
     countEl.innerHTML = counts.toFixed(1); // Limit the decimal to 1 place
     countEl.style.color = "black";
 }
+
 
 function showRandomTriviaPopup(action) {
     // Get a random trivia question
