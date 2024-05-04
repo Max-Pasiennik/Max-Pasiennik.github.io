@@ -19,7 +19,7 @@ const trivia = [
    { question: "What is the largest planet in our solar system?", answer: "Jupiter" },
    { question: "What color does red and yellow make?", answer: "Orange" },
    { question: "What American football team plays in New England?", answer: "Patriots" },
-   { question: "What fruit do kids traditionally give to teachers", answer: "Apple" },
+   { question: "What fruit do kids traditionally give to teachers?", answer: "Apple" },
    { question: "What do caterpillars turn into?", answer: "Butterflies" },
    { question: "According to Greek mythology, who was the first woman on earth?", answer: "Pandora" },
    { question: "What do bees make?", answer: "Honey" },
@@ -28,11 +28,11 @@ const trivia = [
    { question: "What color are Smurfs?", answer: "Blue" },
    { question: "Name Batman’s crime-fighting partner?", answer: "Robin" },
    { question: "Which country is home to the kangaroo?", answer: "Australia" },
-   { question: "What is the coldest place on Earth", answer: "Antarctica" },
+   { question: "What is the coldest place on Earth?", answer: "Antarctica" },
    { question: "How many signs are there in the Zodiac?", answer: "12" },
    { question: "What is the powerhouse of the cell?", answer: "Mitochondria" },
    { question: "How many miles are in a marathon?", answer: "26.2" },
-   { question: "How many holes are played in a typical round of golf", answer: "18" },
+   { question: "How many holes are played in a typical round of golf?", answer: "18" },
    { question: "What was Michael Jordan's number?", answer: "23" },
    { question: "How many periods are in a hockey game?", answer: "3" },
    { question: "What country has the largest population?", answer: "China" },
@@ -103,7 +103,7 @@ function submitVolume() {
     submitEl.disabled = true;
 
     // Show "Submitted" popup
-    alert("Submitted");
+    alert("Submitted!");
 }
 
 
