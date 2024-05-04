@@ -18,7 +18,7 @@ const trivia = [
    { question: "What is the capital of France?", answer: "Paris" },
    { question: "What is the largest planet in our solar system?", answer: "Jupiter" },
    { question: "What color does red and yellow make?", answer: "Orange" },
-   { question: "What is the only fruit that has its seeds on the outside?", answer: "Strawberry" },
+   { question: "What American football team plays in New England?", answer: "Patriots" },
    { question: "What fruit do kids traditionally give to teachers", answer: "Apple" },
    { question: "What do caterpillars turn into?", answer: "Butterflies" },
    { question: "According to Greek mythology, who was the first woman on earth?", answer: "Pandora" },
