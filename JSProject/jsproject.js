@@ -2,7 +2,10 @@ const prevEl = document.querySelector(".dec");
 const nextEl = document.querySelector(".inc");
 const resetEl = document.querySelector(".reset");
 const countEl = document.querySelector(".count");
+const submitEl = document.querySelector(".submit");
 
+submitEl.addEventListener("click", submitVolume);
+resetEl.addEventListener("click", reset);
 
 let counts = 50; // Start the counter at 50 initially
 
@@ -15,10 +18,10 @@ const trivia = [
    { question: "What is the capital of France?", answer: "Paris" },
    { question: "What is the largest planet in our solar system?", answer: "Jupiter" },
    { question: "What color does red and yellow make?", answer: "Orange" },
-   { question: "If you freeze water, what do you get?", answer: "Ice" },
+   { question: "What is the only fruit that has its seeds on the outside?", answer: "Strawberry" },
    { question: "What fruit do kids traditionally give to teachers", answer: "Apple" },
    { question: "What do caterpillars turn into?", answer: "Butterflies" },
-   { question: "What is the color of a school bus?", answer: "Yellow" },
+   { question: "According to Greek mythology, who was the first woman on earth?", answer: "Pandora" },
    { question: "What do bees make?", answer: "Honey" },
    { question: "How many days are in a year?", answer: "365" },
    { question: "Which is the fastest land animal?", answer: "Cheetah" },
@@ -26,7 +29,7 @@ const trivia = [
    { question: "Name Batman’s crime-fighting partner?", answer: "Robin" },
    { question: "Which country is home to the kangaroo?", answer: "Australia" },
    { question: "What is the coldest place on Earth", answer: "Antarctica" },
-   { question: "How many times does Santa check his list?", answer: "Twice" },
+   { question: "How many signs are there in the Zodiac?", answer: "12" },
    { question: "What is the powerhouse of the cell?", answer: "Mitochondria" },
    { question: "How many miles are in a marathon?", answer: "26.2" },
    { question: "How many holes are played in a typical round of golf", answer: "18" },
@@ -46,15 +49,13 @@ const trivia = [
    { question: "What was the basketball team that Kobe Bryant played on?", answer: "Lakers" },
    { question: "In which U.S. state is Area 51 located?", answer: "Nevada" },
    { question: "What is the name of the largest ocean in the world?", answer: "Pacific" },
-   { question: "What animal is Bambi?", answer: "Deer" },
+   { question: "Which country produces the most coffee in the world?", answer: "Brazil" },
    { question: "Arnold Schwarzenegger was once the governor of which U.S. State?", answer: "California" },
    { question: "What is the smallest unit of matter?", answer: "Atom" },
    { question: "Who was the lead vocalist of the band Queen?", answer: "Freddie Mercury" },
    { question: "Who was the sixteenth President of the United States?", answer: "Abraham Lincoln" },
    { question: "Which ancient city was destroyed by the eruption of Mount Vesuvius in 79 AD?", answer: "Pompeii" },
    { question: "What is the largest organ in the human body?", answer: "Skin" },
-
-   
 ];
 
 function increase() {
@@ -71,6 +72,38 @@ function reset() {
     counts = 50; // Reset the counter to 50
     countEl.innerHTML = counts.toFixed(1); // Limit the decimal to 1 place
     countEl.style.color = "black";
+}
+
+// Function to handle submission of volume
+function submitVolume() {
+    // Disable increase and decrease buttons
+    prevEl.disabled = true;
+    nextEl.disabled = true;
+    // Disable the submit button after clicking
+    submitEl.disabled = true;
+}
+
+function reset() {
+    counts = 50; // Reset the counter to 50
+    countEl.innerHTML = counts.toFixed(1); // Limit the decimal to 1 place
+    countEl.style.color = "black";
+    
+    // Enable increase and decrease buttons
+    prevEl.disabled = false;
+    nextEl.disabled = false;
+    // Enable the submit button
+    submitEl.disabled = false;
+}
+
+function submitVolume() {
+    // Disable increase and decrease buttons
+    prevEl.disabled = true;
+    nextEl.disabled = true;
+    // Disable the submit button after clicking
+    submitEl.disabled = true;
+
+    // Show "Submitted" popup
+    alert("Submitted");
 }
 
 

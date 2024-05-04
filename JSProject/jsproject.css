@@ -67,12 +67,24 @@ h1 {
   color: white;
   background-color: black;
   font-size: 18px; /* Adjusted font size */
-  padding: 10px 20px; /* Increased padding */
+  padding: 20px 20px; /* Increased padding */
   outline: none;
   border: none;
   cursor: pointer;
 }
+.reset,
+.submit {
+  color: white;
+  background-color: black;
+  font-size: 18px; /* Adjusted font size */
+  padding: 10px 20px; /* Increased padding */
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 
-.reset:active {
+.reset:active,
+.submit:active {
   transform: scale(0.95);
 }
