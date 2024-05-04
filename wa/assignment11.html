@@ -2,57 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assignment11.css">
+    <title>wa12</title>
 </head>
 <body>
-    <button>Update</button>
-    <canvas></canvas>
-    
-    <script>
-        const btn = document.querySelector("button");
-        const canvas = document.querySelector("canvas");
-        const ctx = canvas.getContext("2d");
+    <div class="app"> 
+        <header>Cat Facts</header>
+        <section class="quotes">
+          <div class="quote-text" id="js-quote-text"></div>
+        </section>
+        <section class="controls" >
+          <button type="button" id="js-new-quote" class="new-quote button">
+            Generate new cat fact(s)
+          </button>
+         
+        <label for="js-fact-count">How many cat facts would you like?</label>
+        <input type="number" id="js-fact-count" min="1" max="3" value="1">
 
-        document.addEventListener("DOMContentLoaded", () => {
-            canvas.width = document.documentElement.clientWidth;
-            canvas.height = document.documentElement.clientHeight;
-        });
-
-        function random(number) {
-            return Math.floor(Math.random() * number);
-        }
-
-        function draw() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < 100; i++) {
-                ctx.beginPath();
-                // ctx.fillStyle = "rgb(255 0 0 / 50%)";
-                ctx.fillStyle = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
-                ctx.arc(
-                    random(canvas.width),
-                    random(canvas.height),
-                    random(50),
-                    0,
-                    2 * Math.PI,
-                    );
-                    ctx.fill();
-        }
-        }
-
-        btn.addEventListener("click", draw);
-
-
-        let x = 2;
-
-        if (x == 1) {
-            console.log("x is 1!")
-        }
-        else {
-            console.log("x isn't 1!")
-        }
-
-    </script>
-    
+          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+        <p>I added a user input that allows users to select the number of cat facts they would like to receive. The user can select a number between 1 and 3 using the arrows, however if they type a number larger than 3 they will receive an error message that states the parameters. The API I'm using already alowed for this functionality simply by adding ?count= to the end of the link so all I'm doing in JavaScript is changing the endpoint accordingly.</p>
+      </div>
+      <script src="assignment11.js"></script>
 </body>
 </html>
