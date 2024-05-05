@@ -30,11 +30,14 @@ function displayQuote(question){
 
 function displayAnswer(answer) {
     const answerTxt = document.querySelector('#js-answer-text');
-    answerTxt.textContent = ' ';
+    answerTxt.textContent = answer;
 }
 
+
 function testFunction(){
-    console.log("Anwser button clicked")
+    console.log("Answer button clicked");
+    displayAnswer(answer);
 }
+
 
 getQuote();
