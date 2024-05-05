@@ -74,14 +74,6 @@ function reset() {
     countEl.style.color = "black";
 }
 
-// Function to handle submission of volume
-function submitVolume() {
-    // Disable increase and decrease buttons
-    prevEl.disabled = true;
-    nextEl.disabled = true;
-    // Disable the submit button after clicking
-    submitEl.disabled = true;
-}
 
 function reset() {
     counts = 50; // Reset the counter to 50
@@ -102,8 +94,17 @@ function submitVolume() {
     // Disable the submit button after clicking
     submitEl.disabled = true;
 
+    // Play submit sound effect
+    document.getElementById('submitSound').play();
+
     // Show "Submitted" popup
     alert("Submitted!");
+
+    // Enable increase and decrease buttons
+    prevEl.disabled = false;
+    nextEl.disabled = false;
+    // Enable the submit button
+    submitEl.disabled = false;
 }
 
 
@@ -121,8 +122,12 @@ function showRandomTriviaPopup(action) {
         // Correct answer: Perform action (increase or decrease)
         if (action === "increase") {
             counts += 0.5;
+            // Play increase sound effect
+            document.getElementById('increaseSound').play();
         } else if (action === "decrease") {
             counts -= 0.5;
+            // Play decrease sound effect
+            document.getElementById('decreaseSound').play();
         }
         countEl.innerHTML = counts.toFixed(1); // Limit the decimal to 1 place
         if (counts > 0) {
@@ -133,8 +138,11 @@ function showRandomTriviaPopup(action) {
             countEl.style.color = "black";
         }
     } else {
-        // Incorrect answer: Notify the user and reset the counter to 50
+        // Incorrect answer: Play wrong answer sound effect
+        document.getElementById('wrongAnswerSound').play();
+        // Notify the user about the incorrect answer
         alert("Incorrect answer. The counter has been reset to 50.");
+        // Reset the counter to 50
         reset();
     }
 }
