@@ -101,10 +101,10 @@ function showRandomTriviaPopup(action) {
     
     if (userAnswer && userAnswer.trim().toLowerCase() === correctAnswer.toLowerCase()) {
         if (action === "increase") {
-            counts += 0.2;
+            counts += 0.1;
             document.getElementById('increaseSound').play();
         } else if (action === "decrease") {
-            counts -= 0.2;
+            counts -= 0.1;
             document.getElementById('decreaseSound').play();
         }
         countEl.innerHTML = counts.toFixed(1); 
