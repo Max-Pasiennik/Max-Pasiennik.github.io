@@ -55,6 +55,19 @@ const trivia = [
    { question: "Who was the sixteenth President of the United States?", answer: "Abraham Lincoln" },
    { question: "Which ancient city was destroyed by the eruption of Mount Vesuvius in 79 AD?", answer: "Pompeii" },
    { question: "What is the largest organ in the human body?", answer: "Skin" },
+   { question: "What country is the Leaning Tower of Pisa in?", answer: "Italy" },
+   { question: "Which vegetable is believed to help you see better?", answer: "Carrots" },
+   { question: "Who is Simba's dad??", answer: "Mufasa" },
+   { question: "Who is the cowboy in the movie Toy Story?", answer: "Woody" },
+   { question: "What color are the spots on ladybugs?", answer: "black" },
+   { question: "What is the largest continent?", answer: "Asia" },
+   { question: "Why do things fall if you drop them?", answer: "Gravity" },
+   { question: "How many inches are in a foot?", answer: "12" },
+   { question: "How many feet are in a yard?", answer: "3" },
+   { question: "How many years is a century?", answer: "100" },
+   { question: "What is the 'Lone Star State?'", answer: "Texas" },
+   { question: "What animal can learn to talk?", answer: "Parrot" },
+
 ];
 
 function increase() {
