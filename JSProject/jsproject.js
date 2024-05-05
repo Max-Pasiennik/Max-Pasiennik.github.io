@@ -7,13 +7,12 @@ const submitEl = document.querySelector(".submit");
 submitEl.addEventListener("click", submitVolume);
 resetEl.addEventListener("click", reset);
 
-let counts = 50; // Start the counter at 50 initially
+let counts = 50; 
 
 prevEl.addEventListener("click", decrease);
 nextEl.addEventListener("click", increase);
 resetEl.addEventListener("click", reset);
 
-// Array of trivia questions and answers
 const trivia = [
    { question: "What is the capital of France?", answer: "Paris" },
    { question: "What is the largest planet in our solar system?", answer: "Jupiter" },
@@ -59,77 +58,56 @@ const trivia = [
 ];
 
 function increase() {
-    // Show random trivia question popup
     showRandomTriviaPopup("increase");
 }
 
 function decrease() {
-    // Show random trivia question popup
     showRandomTriviaPopup("decrease");
 }
 
 function reset() {
-    counts = 50; // Reset the counter to 50
-    countEl.innerHTML = counts.toFixed(1); // Limit the decimal to 1 place
+    counts = 50; 
+    countEl.innerHTML = counts.toFixed(1); 
     countEl.style.color = "black";
 }
 
 
 function reset() {
-    counts = 50; // Reset the counter to 50
-    countEl.innerHTML = counts.toFixed(1); // Limit the decimal to 1 place
+    counts = 50; 
+    countEl.innerHTML = counts.toFixed(1); 
     countEl.style.color = "black";
-    
-    // Enable increase and decrease buttons
     prevEl.disabled = false;
     nextEl.disabled = false;
-    // Enable the submit button
     submitEl.disabled = false;
 }
 
 function submitVolume() {
-    // Disable increase and decrease buttons
     prevEl.disabled = true;
     nextEl.disabled = true;
-    // Disable the submit button after clicking
     submitEl.disabled = true;
-
-    // Play submit sound effect
     document.getElementById('submitSound').play();
-
-    // Show "Submitted" popup
     alert("Submitted!");
-
-    // Enable increase and decrease buttons
     prevEl.disabled = false;
     nextEl.disabled = false;
-    // Enable the submit button
     submitEl.disabled = false;
 }
 
 
 function showRandomTriviaPopup(action) {
-    // Get a random trivia question
     const randomIndex = Math.floor(Math.random() * trivia.length);
     const randomQuestion = trivia[randomIndex].question;
     const correctAnswer = trivia[randomIndex].answer;
-
-    // Show prompt for the random trivia question
     const userAnswer = prompt(randomQuestion);
     
-    // Check if the answer is correct
     if (userAnswer && userAnswer.trim().toLowerCase() === correctAnswer.toLowerCase()) {
-        // Correct answer: Perform action (increase or decrease)
         if (action === "increase") {
-            counts += 0.5;
-            // Play increase sound effect
+            counts += 0.2;
             document.getElementById('increaseSound').play();
         } else if (action === "decrease") {
-            counts -= 0.5;
-            // Play decrease sound effect
+            counts -= 0.2;
             document.getElementById('decreaseSound').play();
         }
-        countEl.innerHTML = counts.toFixed(1); // Limit the decimal to 1 place
+        countEl.innerHTML = counts.toFixed(1); 
         if (counts > 0) {
             countEl.style.color = "green";
         } else if (counts < 0) {
@@ -138,11 +116,8 @@ function showRandomTriviaPopup(action) {
             countEl.style.color = "black";
         }
     } else {
-        // Incorrect answer: Play wrong answer sound effect
         document.getElementById('wrongAnswerSound').play();
-        // Notify the user about the incorrect answer
         alert("Incorrect answer. The counter has been reset to 50.");
-        // Reset the counter to 50
         reset();
     }
 }
