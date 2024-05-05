@@ -57,7 +57,7 @@ const trivia = [
    { question: "What is the largest organ in the human body?", answer: "Skin" },
    { question: "What country is the Leaning Tower of Pisa in?", answer: "Italy" },
    { question: "Which vegetable is believed to help you see better?", answer: "Carrots" },
-   { question: "Who is Simba's dad??", answer: "Mufasa" },
+   { question: "Who is Simba's dad?", answer: "Mufasa" },
    { question: "Who is the cowboy in the movie Toy Story?", answer: "Woody" },
    { question: "What color are the spots on ladybugs?", answer: "black" },
    { question: "What is the largest continent?", answer: "Asia" },
